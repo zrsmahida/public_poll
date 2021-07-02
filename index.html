@@ -292,22 +292,23 @@
                       <div class="cricket-player-rating">
                         <input type="range" min="1" max="100" value="67" class="cricket-rating-bar"
                           id="cricketer_rating_1" onchange="updateTextInput(this.id, this.value);">
-                        <span class="rating-text">Virat Kohli (<span id="cricketer_rating_1_text">67%</span>)</span>
+                        <!-- <span class="rating-text">Virat Kohli (<span id="cricketer_rating_1_text">67%</span>)</span> -->
+                        <span class="rating-text">Virat Kohli (67%)</span>
                       </div>
                       <div class="cricket-player-rating">
                         <input type="range" min="1" max="100" value="28" class="cricket-rating-bar"
                           id="cricketer_rating_2" onchange="updateTextInput(this.id, this.value);">
-                        <span class="rating-text">Rohit Sharma (<span id="cricketer_rating_2_text">28%</span>)</span>
+                        <span class="rating-text">Rohit Sharma (28%)</span>
                       </div>
                       <div class="cricket-player-rating">
                         <input type="range" min="1" max="100" value="3" class="cricket-rating-bar"
                           id="cricketer_rating_3" onchange="updateTextInput(this.id, this.value);">
-                        <span class="rating-text">Rahane (<span id="cricketer_rating_3_text">3%</span>)</span>
+                        <span class="rating-text">Rahane (3%)</span>
                       </div>
                       <div class="cricket-player-rating">
                         <input type="range" min="1" max="100" value="2" class="cricket-rating-bar"
                           id="cricketer_rating_4" onchange="updateTextInput(this.id, this.value);">
-                        <span class="rating-text">Rahul (<span id="cricketer_rating_4_text">2%</span>)</span>
+                        <span class="rating-text">Rahul (2%)</span>
                       </div>
                     </div>
                     <div class="cricket-details">
@@ -379,7 +380,7 @@
                         <div class="wear-rating">
                           <input type="range" min="1" max="100" value="67" class="wear-rating-bar" id="wear_rating_1"
                             onchange="updateTextInput(this.id, this.value);">
-                          <p class="rating-text">Reebok (<span id="wear_rating_1_text">67%</span>)</p>
+                          <p class="rating-text">Reebok (67%)</p>
                         </div>
                       </div>
                       <div class="second-wear">
@@ -387,7 +388,7 @@
                         <div class="wear-rating">
                           <input type="range" min="1" max="100" value="33" class="wear-rating-bar" id="wear_rating_2"
                             onchange="updateTextInput(this.id, this.value);">
-                          <p class="rating-text">Nike (<span id="wear_rating_2_text">33%</span>)</p>
+                          <p class="rating-text">Nike (33%)</p>
                         </div>
                       </div>
                     </div>
@@ -456,7 +457,8 @@
                           <input type="range" min="1" max="100" value="60" class="cafe-rating-bar" id="cafe_rating"
                             onchange="updateTextInput(this.id, this.value);">
                           <div class="rating">
-                            <span id="cafe_rating_text">60%</span>
+                            <!-- <span id="cafe_rating_text">60%</span> -->
+                            <span class="cafe_rating_text">60%</span>
                           </div>
                         </div>
                       </div>
@@ -1039,6 +1041,7 @@
   <!-- Scripts -->
   <script>
     function updateTextInput(id, value) {
+      // document.getElementById(id).style.backgroundImage = '-moz-linear-gradient(to right, #e7f6ff ' + value + '%, #ffffff ' + value + '%)';
       const text = '#' + id + '_text';
       $(text).html(value + '%');
     }

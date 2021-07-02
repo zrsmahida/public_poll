@@ -894,15 +894,17 @@ input.icon {
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
+  background-image: linear-gradient(to right, #e7f6ff 60%, #ffffff 60%);
+  
 }
 
 #cafe_rating::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
+  /* width: 25px;
   height: 25px;
   background: #d0ebfc;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 #cafe_rating::-ms-fill-lower {
@@ -910,6 +912,14 @@ input.icon {
 }
 
 #cafe_rating_text {
+  margin: 0;
+  font-family: Nunito-Regular;
+  font-size: 14px;
+  text-align: right;
+  color: #04283e;
+}
+
+.cafe_rating_text {
   margin: 0;
   font-family: Nunito-Regular;
   font-size: 14px;
@@ -974,17 +984,29 @@ input.icon {
   transition: opacity 0.2s;
 }
 
+#cricketer_rating_1 {
+  background-image: linear-gradient(to right, #e7f6ff 67%, #ffffff 67%);
+}
+
+#cricketer_rating_2 {
+  background-image: linear-gradient(to right, #e7f6ff 28%, #ffffff 28%);
+}
+
+#cricketer_rating_3 {
+  background-image: linear-gradient(to right, #e7f6ff 3%, #ffffff 3%);
+}
+
+#cricketer_rating_4 {
+  background-image: linear-gradient(to right, #e7f6ff 2%, #ffffff 2%);
+}
+
 .cricket-rating-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 10px;
+  /* width: 10px;
   height: 40px;
-  background: #d0ebfc;
-  cursor: pointer;
-}
-
-.cricket-rating-bar::-ms-fill-lower {
-  background: #d0ebfc;
+  background: #e7f6ff;
+  cursor: pointer; */
 }
 
 .post-area .cricket-player-rating {
@@ -1117,14 +1139,18 @@ input.icon {
 .wear-rating-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 10px;
+  /* width: 10px;
   height: 40px;
   background: #d0ebfc;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
-.wear-rating-bar::-ms-fill-lower {
-  background: #d0ebfc;
+#wear_rating_1 {
+  background-image: linear-gradient(to right, #e7f6ff 67%, #ffffff 67%);
+}
+
+#wear_rating_2 {
+  background-image: linear-gradient(to right, #e7f6ff 33%, #ffffff 33%);
 }
 
 /* Right Section CSS Starts */
